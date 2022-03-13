@@ -1,0 +1,142 @@
+.background{
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -9999;
+    margin: 0%;
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+
+.homeButton {
+    margin-top: 50px;
+    width: 500px;
+    height: 80px;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(233, 219, 19);
+    text-shadow: 4px 4px 4px red;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   .homeButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-image: url(../imagenes/home_vuelve.gif);
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   .homeButton:hover::before {
+    width: 100%;
+   }
+   
+   .homeButton:hover {
+    color: rgb(66, 194, 16);
+   }
+   
+   .homeButton:active:before {
+    background: #b9b9b9;
+   }
+
+   .homeCreate {
+    margin-top: 10px;
+    width: 400px;
+    height: 80px;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(239, 243, 24);
+    text-shadow: 4px 4px 4px red;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   .homeCreate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-image: url(../imagenes/home_crea.gif);
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   .homeCreate:hover::before {
+    width: 100%;
+   }
+   
+   .homeCreate:hover {
+    color: rgb(66, 194, 16);
+   }
+   
+   .homeCreate:active:before {
+    background: #b9b9b9;
+   }
+.homeselect {
+    width: 20%;
+    display: center;
+    padding: 5px 30px;    
+    border-radius: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2.5px solid rgb(251, 255, 7);
+    color: rgb(251, 255, 2);
+    text-shadow: 4px 4px 4px red;
+    appearance: none;
+    font-size: 20px;    
+    font-family: 'Dancing Script', cursive;
+    margin-right: 10px;
+    letter-spacing: 2.5px;  
+    box-shadow: 15px 15px 30px #191919,
+              -15px -15px 30px #292929;  
+}
+.homeselect:hover {
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    box-shadow: inset 0 -100px 0 0 #ffd900;
+}
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 100px;
+    justify-items: center;
+    
+}
+.recipes2 {
+    display: grid;
+}
+.errSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 30, 0);    
+    font-size: large;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: sans-serif;
+}

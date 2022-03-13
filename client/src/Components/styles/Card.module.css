@@ -1,0 +1,39 @@
+.contenedor {
+    width: 280px;
+    height: 350px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 15px 15px 30px #191919,
+              -15px -15px 30px #292929;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+              transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    border: 2px solid #000000;    
+    display: grid;     
+}
+.contenedor:hover{
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.50);
+    background-image: url(../imagenes/card1.gif);
+    opacity: 90%;
+   
+}
+.name1{
+    
+    font-family: 'Dancing Script', cursive;
+    color:  rgb(217, 255, 1);  
+    text-shadow: 4px 4px 4px red; 
+}
+.name2{
+    
+    
+    font-family: 'Dancing Script', cursive;
+    color:  rgb(179, 255, 0);  
+    text-shadow: 4px 4px 4px red; 
+}
+.imgCard{
+    border: 2px solid black;
+    box-shadow: 0 0 -15px -15px black;
+}

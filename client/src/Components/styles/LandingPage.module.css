@@ -1,0 +1,52 @@
+.landing {
+    position: absolute;
+    margin: 0%;
+    background-image: url(../imagenes/landing.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Comforter', cursive;
+}
+
+.h1 {
+    position: relative;
+    top: 50px;
+    font-size: 80px;
+    text-shadow: 4px 4px 4px red;
+}
+
+.button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #f0f356;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: .3s;
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+    color: #ddda18;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+   }
+   
+   .button::before {
+    content: '';
+    width: 0px;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-image: url(../imagenes/volver.gif);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .button:hover::before {
+    width: 105%;
+   }
